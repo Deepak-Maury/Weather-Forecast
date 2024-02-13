@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="weather.js" defer></script>
+  </head>
+  <body>
+    <h1>Weather Dashboard</h1>
+    <div class="container">
+      <div class="weather-input">
+        <h3 class="cityname">Enter a City Name</h3>
+        <input class="city-input" id="city" type="text" placeholder="Enter city" value="">
+        <button class="search-btn" onclick="checkWeatherData()">Search</button>
+      </div>
+      <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h4 class="city"></h4><br>
+            <h4 class="date"></h4>
+            <h6 class="temp"></h6>
+            <h6 class="wind"></h6>
+            <h6 class="humidity"></h6>
+             <h6 class="pressure"></h6>
+          </div>
+          <div class="icon">
+           <img class="icons" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+          <h6 class="des"></h6></div>
+        </div>
+      </div>
+    </div>
+    <h2 class="heading">Next 6-days forecast</h2>
+     <div id="forecast">
+
+     </div>
+       
+    </body>
+</html>
